@@ -2,8 +2,8 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
- /* background-color: black; */
- background-image: url(Assets/bg1.jpeg);
+  background-color: #0d0d0d;
+  background-image: url(Assets/bg1.jpeg);
   margin: 0rem;
   overflow: hidden;
 }
@@ -11,14 +11,14 @@ body {
 h1 {
   font-family: 'Space Mono', monospace;
   font-size: clamp(3rem, 10vw, 10rem);
-  color: white; /*to change color of hack it*/
+  color: white;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
 h1:hover {
   background-color: white;
-  color: rgba(0, 0, 0, 0.934); /*after hover effect color*/
+  color: rgba(0, 0, 0, 0.934);
 }
 
 
@@ -27,7 +27,7 @@ body.menu-toggled > .meta-link > span {
 }
 
 #source-link {
-  bottom: 250px; /*to change get started position*/
+  bottom: 250px;
 }
 
 #source-link > i {
