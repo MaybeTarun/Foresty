@@ -1,4 +1,4 @@
-# Fostery
+# Foresty
 
 In an era of increasing cyber threats, safeguarding the security of digital assets is paramount. Traditional penetration testing, while effective, often proves to be time-consuming and expensive. In response to this challenge, we present "Foresty," a revolutionary project that offers a free, efficient, and innovative solution for identifying vulnerabilities and providing effective remediation strategies.
 
