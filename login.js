@@ -1,7 +1,7 @@
 const bg = document.getElementById('bg');
-const n = 400;
+const num = 400;
 
-for (let i = 0; i<n; i++) {
+for (let i = 0; i<num; i++) {
     const box = document.createElement('div');
     box.classList.add('box');
     bg.append(box)
@@ -29,23 +29,43 @@ document.querySelector("h1").onmouseover = event => {
     }, 50);
 };
 
-const loginButton = document.getElementById("login");
-const registerButton = document.getElementById("register");
+document.getElementById("login").addEventListener("click", function (e) {
+    e.preventDefault();
 
-loginButton.addEventListener("click", function() {
-    const loginEmail = document.getElementById("lemail").value;
-    const loginPassword = document.getElementById("lpassword").value;
+    var lemail = document.getElementById("lemail").value;
+    var lpassword = document.getElementById("lpassword").value;
 
-    console.log("Login Email:", loginEmail);
-    console.log("Login Password:", loginPassword);
+    if (name === "" || email === "" || password === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    console.log("Email: " + lemail);
+    console.log("Password: " + lpassword);
+
+    document.getElementById("lemail").value = "";
+    document.getElementById("lpassword").value = "";
+
 });
 
-registerButton.addEventListener("click", function() {
-    const registerName = document.getElementById("name").value;
-    const registerEmail = document.getElementById("email").value;
-    const registerPassword = document.getElementById("password").value;
+document.getElementById("register").addEventListener("click", function (e) {
+    e.preventDefault();
 
-    console.log("Register Name:", registerName);
-    console.log("Register Email:", registerEmail);
-    console.log("Register Password:", registerPassword);
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if (name === "" || email === "" || password === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    console.log("Name: " + name);
+    console.log("Email: " + email);
+    console.log("Password: " + password);
+
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
+
 });

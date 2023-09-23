@@ -2,8 +2,8 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
-/*   background-color: #0d0d0d; */
-  background-image: url('Assets/bg1.jpeg');
+  background-color: #0d0d0d;
+  background-image: url(Assets/bg1.jpeg);
   margin: 0rem;
   overflow: hidden;
 }
