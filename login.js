@@ -53,11 +53,6 @@ document.getElementById("register").addEventListener("click", function (e) {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    if (name === "" || email === "" || password === "") {
-        alert("Please fill in all fields.");
-        return;
-    }
-
     // createUserWithEmailAndPassword(auth, email, password)
     // .then((userCredential) => {
     //     const user = userCredential.user;
@@ -82,11 +77,6 @@ document.getElementById("login").addEventListener("click", function (e) {
 
     var lemail = document.getElementById("lemail").value;
     var lpassword = document.getElementById("lpassword").value;
-
-    if (lemail === "" || lpassword === "") {
-        alert("Please fill in all fields.");
-        return;
-    }
 
     // signInWithEmailAndPassword(auth, email, password)
     // .then((userCredential) => {
