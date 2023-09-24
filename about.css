@@ -61,6 +61,14 @@ nav ul li a{
     font-size: 18px;
 }
 
+nav ul li a:hover {
+    border-bottom: 2px solid #9fef00;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #9fef00;
+}
+
 /* Used in the About Me sections */
 
 .container {
