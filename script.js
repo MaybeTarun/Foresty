@@ -29,16 +29,14 @@ document.querySelector("h1").onmouseover = event => {
 
 const getStartedButton = document.getElementById("source-link");
 const expandCircle = document.getElementById("expand-circle");
-const clickSound = document.getElementById("click-sound");
 
 getStartedButton.addEventListener("click", function(event) {
   event.preventDefault();
-  clickSound.play();
 
   expandCircle.style.width = "500%";
   expandCircle.style.height = "1000%";
 
   setTimeout(function() {
     window.location.href = "login.html";
-  }, 500);
+  }, 300);
 });
