@@ -4,15 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome Page</title>
+    <title>Foresty</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio id="click-sound">
+        <source src="Assets/click.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video id="video-background" autoplay loop muted playsinline>
+        <source src="Assets/vdo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <h1 data-value="FORESTY">FORESTY</h1>
-    <a id="source-link" class="meta-link" href="login.html">
+    <a id="source-link" class="meta-link">
     <i class="fa-solid fa-link"></i>
     <span>Get Started</span>
     </a>
+
+    <div class="circle" id="expand-circle"></div>
     
     <script src="script.js"></script>
 </body>

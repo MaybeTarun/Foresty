@@ -3,7 +3,6 @@ body {
   place-items: center;
   height: 100vh;
   background-color: #0d0d0d;
-  background-image: url(Assets/bg1.jpeg);
   margin: 0rem;
   overflow: hidden;
 }
@@ -14,12 +13,13 @@ h1 {
   color: white;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  padding-bottom: 50px;
 }
 
-h1:hover {
+/* h1:hover {
   background-color: white;
   color: rgba(0, 0, 0, 0.934);
-}
+} */
 
 
 body.menu-toggled > .meta-link > span {
@@ -28,14 +28,6 @@ body.menu-toggled > .meta-link > span {
 
 #source-link {
   bottom: 250px;
-}
-
-#source-link > i {
-  color: rgb(94, 106, 210);
-}
-
-#yt-link > i {
-  color: rgb(239, 83, 80);
 }
 
 .meta-link {
@@ -72,4 +64,27 @@ body.menu-toggled > .meta-link > span {
   color: white;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
+}
+
+.circle {
+  width: 0%;
+  height: 0%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
 }
